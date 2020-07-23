@@ -10,19 +10,12 @@ class Navbar extends Component {
                 <div className="logo">
                 <p>Company name</p>
                 </div>
-        
-                <div className="btn">
-                    <div className="bar"></div>
-                    <div className="bar"></div>
-                    <div className="bar"></div>
-
-                </div>
             </div>
             <ul>
-              <li><a href="#">FEATURE</a></li>
-              <li><a href="#">ENTERPRISES</a></li>
-              <li><a href="#">SUPPORT</a></li>
-              <li><a href="#">LOGIN</a></li>
+              <li><button className="button">FEATURE</button></li>
+              <li><button className="button">ENTERPRISES</button></li>
+              <li><button className="button">SUPPORT</button></li>
+              <li><button className="button-login">LOGIN</button></li>
             </ul>
         
         </nav>

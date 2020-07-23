@@ -12,7 +12,6 @@ function App() {
       <Content/>
       <PriceTypes/>
       <Footer/>
-
         <div className="copy">
           <h5>copyright@ Your Website 2000</h5>
         </div>
