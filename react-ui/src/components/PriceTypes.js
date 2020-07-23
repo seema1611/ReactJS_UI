@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from './Header.css';
+import '../css/Styles.css';
 
 export default class PriceTypes extends Component {
     render() {
@@ -19,6 +19,7 @@ export default class PriceTypes extends Component {
                 <div className="firstbox">
                     <div className="free">
                         <p>Pro</p>
+                        <p>Most popular</p>
                     </div>
 
                     <h2>$15 /mo</h2>
