@@ -6,7 +6,7 @@ class Content extends Component{
         return(
             <div className="content">
                 <div className="middle-header">
-                    <h1>Pricing</h1>
+                    <p>Pricing</p>
                 </div>
 
                 <div className="middle-content-first">

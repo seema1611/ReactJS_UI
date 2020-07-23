@@ -19,7 +19,7 @@ export default class PriceTypes extends Component {
                 <div className="firstbox">
                     <div className="free">
                         <p>Pro</p>
-                        <p>Most popular</p>
+                        <h4>Most popular</h4>
                     </div>
 
                     <h2>$15 /mo</h2>
