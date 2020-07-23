@@ -41,12 +41,10 @@
   
   ul{
     list-style: none;
-    height: 0px;
-    overflow: hidden;
   }
   
   ul li a{
-    background: whitesmoke;
+    background:rgb(138, 133, 133)e;
 
     display: block;
     padding: 10px;

@@ -3,17 +3,6 @@ import '../css/Styles.css';
 
 class Navbar extends Component {
 
-    state={
-        isOpen: false
-    }
-
-    handleClick=()=>{
-        this.setState({
-            isOpen:!this.state.isOpen,
-        })
-    }
-
-
     render() {
         return (
         <nav>
@@ -22,16 +11,14 @@ class Navbar extends Component {
                 <p>Company name</p>
                 </div>
         
-                <div className="btn" onClick=
-                {this.handleClick}>
+                <div className="btn">
                     <div className="bar"></div>
                     <div className="bar"></div>
                     <div className="bar"></div>
 
                 </div>
             </div>
-            <ul className={this.state.isOpen ? 
-            'showNav':'undefined'}>
+            <ul>
               <li><a href="#">FEATURE</a></li>
               <li><a href="#">ENTERPRISES</a></li>
               <li><a href="#">SUPPORT</a></li>
