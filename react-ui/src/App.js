@@ -13,7 +13,7 @@ function App() {
       <PriceTypes/>
       <Footer/>
         <div className="copy">
-          <h5>copyright@ Your Website 2000</h5>
+          <p>copyright@ Your Website 2000</p>
         </div>
     </div>
   );
