@@ -15,6 +15,9 @@ class Content extends Component{
 
                 <div className="middle-content-last">
                 <p>customers with this layout.Its built with default </p> 
+                </div>
+
+                <div className="middle-content-last">
                 <p>Material UI Components with little customization</p>
                 </div>
             </div>

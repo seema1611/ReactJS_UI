@@ -12,9 +12,9 @@ function App() {
       <Content/>
       <PriceTypes/>
       <Footer/>
-        <div className="copy">
-          <p>copyright@ Your Website 2000</p>
-        </div>
+      <div className="copy">
+        <p>copyright@ Your Website 2000</p>
+      </div>
     </div>
   );
 }
