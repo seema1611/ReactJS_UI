@@ -1,28 +1,19 @@
-import React,{Component} from 'react';
-import '../css/Styles.css';
+import React from 'react';
+import TilesGroup from './TilesGroup'
 
-class Content extends Component{
+class Content extends React.Component{
     render(){
-        return(
-            <div className="content">
-                <div className="middle-header">
-                    <p>Pricing</p>
-                </div>
-
-                <div className="middle-content-first">
-                <p>Quickly build an effective pricing table for your potential </p>
-                </div>
-
-                <div className="middle-content-last">
-                <p>customers with this layout.Its built with default </p> 
-                </div>
-
-                <div className="middle-content-last">
-                <p>Material UI Components with little customization</p>
-                </div>
+        return (
+            <div div="content">
+            <div id="center-content">
+            <div className="content-header" >{this.props.title}</div>
+            <div className="content-desc">{this.props.desc}</div>
             </div>
-        )
+            <div className="tile-group">    
+                <TilesGroup tiles={this.props.tiles} />
+            </div>
+            </div>
+        );
     }
 }
-
 export default Content;

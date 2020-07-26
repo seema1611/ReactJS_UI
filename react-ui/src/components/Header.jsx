@@ -1,27 +1,30 @@
-import React,{Component} from 'react';
-import '../css/Styles.css';
+import React from 'react';
+import LoginButton from './LoginButton';
+import NavbarButton from './NavbarButton';
+import CompanyName from './CompanyName';
 
-class Navbar extends Component {
-
+class Header extends React.Component{
+    
+    
     render() {
-        return (
-        <nav>
-            <div className="logoBtn">
-                <div className="logo">
-                <p>Company name</p>
+        var navbarMenu= this.props.navbarButtons.map(button => {
+            return (
+                <NavbarButton key={button} value={button}/>
+                );
+            })
+            return (
+                <div className="navbar">
+                <div className="navbar-left">
+                <CompanyName name="Company Name"/>
                 </div>
-            </div>
-            <ul>
-              <li><button className="button">FEATURE</button></li>
-              <li><button className="button">ENTERPRISES</button></li>
-              <li><button className="button">SUPPORT</button></li>
-              <li><button className="button-login">LOGIN</button></li>
-            </ul>
+                <div className="navbar-right">
+                {navbarMenu}
+                <LoginButton />
+                </div>
+                
+                </div>
+                );
+            }
+        }
         
-        </nav>
-        )
-    }
-}
-
-
-export default Navbar;
+        export default Header;

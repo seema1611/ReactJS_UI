@@ -1,50 +1,26 @@
-import React, { Component } from 'react';
-import '../css/Styles.css';
+import React from 'react';
+import FooterSubMenu from './FooterSubMenu';
 
-class Details extends Component {
-    render() {
-        return (
-            <div className="down-box">
-                <div className="downfirstbox">
-                    <div className="down-name">
-                        <h5>Company</h5>
-                    </div>
+class Footer extends React.Component{
+    
+    render(){
+        var footerMenu= this.props.footerMenu.map(menu => {
+            return (
+                <FooterSubMenu key={menu.title} subFooterMenu={menu}/>
+            );
+        })
 
-                    <p>Team</p>
-                    <p>History</p>
-                    <p>Contact Us</p>
-                    <p>Location</p>
+        return(
+            <div className="footer">
+                <div className="footer-options">
+                    {footerMenu}
                 </div>
-                <div className="downsecondbox">
-                    <div className="down-name">
-                        <h5>Features</h5>
-                    </div>
-                    <p>Cool Stuff</p>
-                    <p>Random Feature</p>
-                    <p>Team Feature</p>
-                    <p>Developer Stuff</p>
-                    <p>Another One</p>
+                <div className="footer-info">
+                    Copyright @ Your Website 2020.
                 </div>
-                <div className="downthirdbox">
-                    <div className="down-name">
-                        <h5>Resources</h5>
-                    </div>
-                    <p>Resource</p>
-                    <p>Resource Name</p>
-                    <p>Another Resource</p>
-                    <p>Final Resource</p>
-                </div>
-                <div className="fourthbox">
-                    <div className="down-name">
-                        <h5>Legal</h5>
-                    </div>
-                    <p>Privcy Policy</p>
-                    <p>Terms of Use</p>
-                </div>
-
             </div>
         );
     }
 }
 
-export default Details;
+export default Footer;
