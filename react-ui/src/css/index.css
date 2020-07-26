@@ -500,6 +500,7 @@ body{
 }
 .name{
     min-width: 20%;
+    color:  #230cf5;
 }
 .email{
     min-width: 20%;
